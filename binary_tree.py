@@ -103,11 +103,14 @@ if __name__ == '__main__':
     country_tree = build_tree(countries)
     initial_tree = build_tree(initials)
 
-    # print(initial_tree.in_order_traversal())
+    numbers_tree.delete(20)
+    initial_tree.delete("E")
 
+    # print(initial_tree.in_order_traversal())
     # print("UK is in the list?", country_tree.search("UK"))
     # print("Sweden is in the list?", country_tree.search("Sweden"))
+    # print("After deleting 20",  numbers_tree.in_order_traversal())
 
-    numbers_tree.delete(17)
+    print("Building tree with these elements: ", initials)
+    print("After deleting E in order traversal: ",  initial_tree.in_order_traversal())
 
-    print("After deleting 20",  numbers_tree.in_order_traversal())
